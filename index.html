@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Список задач</h1>
+        <div class="task-input">
+            <input type="text" id="taskText" placeholder="Название задачи...">
+            <button id="addTask">+ Добавить</button>
+        </div>
+        <div class="task-container">
+            <div class="task-column backlog">
+                <h2>Бэклог</h2>
+                <div class="task-list" id="backlog"></div>
+            </div>
+            <div class="task-column in-progress">
+                <h2>В процессе</h2>
+                <div class="task-list" id="inProgress"></div>
+            </div>
+            <div class="task-column done">
+                <h2>Готово</h2>
+                <div class="task-list" id="done"></div>
+            </div>
+            <div class="task-column trash">
+                <h2>Корзина</h2>
+                <div class="task-list" id="trash"></div>
+                <button id="clearTrash">❌ Очистить</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
