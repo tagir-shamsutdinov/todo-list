@@ -1,0 +1,94 @@
+/* a. Общий стиль для всего документа */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер всего контента */
+.container {
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.header {
+    text-align: center;
+    background-color: #3572ef;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* b. Стиль для добавления задачи */
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: #3572ef;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* c. Стиль для задачи */
+.task {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* d. Стиль для области с задачами */
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.task-column {
+    flex: 1;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 5px;
+    min-height: 150px;
+}
+
+/* Индивидуальные стили колонок */
+.backlog { background-color: #e3e7fc; }
+.in-progress { background-color: #cfe8fc; }
+.done { background-color: #d4f5d4; }
+.trash { background-color: #f9d6d5; }
+
+/* e. Стиль для кнопки "Очистить" */
+.clear-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
