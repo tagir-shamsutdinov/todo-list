@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список задач — Шамсутдинов Тагир</title>
+    <title>Список задач</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="header">
-        <h1>Список задач</h1>
+        <h1 class="header__title">Список задач</h1>
     </header>
 
-    <div class="container">
-        <div class="task-input">
-            <input type="text" placeholder="Название задачи...">
-            <button class="add-btn">+ Добавить</button>
-        </div>
-
-        <div class="task-sections">
-            <div class="task-column backlog">
-                <h2>Бэклог</h2>
-                <div class="task">Выучить JS</div>
-                <div class="task">Выучить React</div>
-                <div class="task">Сделать домашку</div>
+    <main class="main-container">
+        <section class="task-input">
+            <h2 class="task-input__title">Новая задача</h2>
+            <div class="task-input__form">
+                <input type="text" class="task-input__field" placeholder="Название задачи...">
+                <button class="task-input__button">+ Добавить</button>
             </div>
-            
-            <div class="task-column in-progress">
-                <h2>В процессе</h2>
-                <div class="task">Выпить смузи</div>
-                <div class="task">Попить воды</div>
-            </div>
+        </section>
 
-            <div class="task-column done">
-                <h2>Готово</h2>
-                <div class="task">Позвонить маме</div>
-                <div class="task">Погладить кота</div>
+        <section class="taskboard">
+            <div class="taskboard__column">
+                <h3 class="taskboard__column-title">Название блока</h3>
+                <div class="taskboard__tasks">
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                </div>
             </div>
 
-            <div class="task-column trash">
-                <h2>Корзина</h2>
-                <div class="task">Сходить погулять</div>
-                <div class="task">Прочитать "Войну и мир"</div>
-                <button class="clear-btn">✖ Очистить</button>
+            <div class="taskboard__column">
+                <h3 class="taskboard__column-title">Название блока</h3>
+                <div class="taskboard__tasks">
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                </div>
             </div>
-        </div>
-    </div>
 
+            <div class="taskboard__column">
+                <h3 class="taskboard__column-title">Название блока</h3>
+                <div class="taskboard__tasks">
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                </div>
+            </div>
+
+            <div class="taskboard__column">
+                <h3 class="taskboard__column-title">Название блока</h3>
+                <div class="taskboard__tasks">
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                    <div class="task">Название первой задачи</div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
