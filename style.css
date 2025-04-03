@@ -1,0 +1,98 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f3ff; /* Светло-синий фон */
+    color: #333;
+}
+
+header {
+    background-color: #4285f4; /* Синий заголовок */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Добавление задачи */
+.add-task {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-task h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.add-task input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.add-task button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Доска задач */
+.task-board {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение колонок */
+    gap: 20px; /* Расстояние между колонками */
+}
+
+.column {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 20%; /* Ширина каждой колонки */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+/* Цвета для колонок */
+.backlog {
+    background-color: #ddd; /* Серый */
+}
+
+.processing {
+    background-color: #d1e8ff; /* Светло-синий */
+}
+
+.done {
+    background-color: #d0f0c0; /* Светло-зеленый */
+}
+
+.basket {
+    background-color: #fddbdb; /* Светло-красный */
+}

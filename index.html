@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Список задач</h1>
+    </header>
+
+    <main>
+        <section class="add-task">
+            <h2>Новая задача</h2>
+            <form>
+                <input type="text" placeholder="Название задачи...">
+                <button>+</button>
+            </form>
+        </section>
+
+        <section class="task-board">
+            <div class="column backlog">
+                <h3>Бэклог</h3>
+                <div class="task">Сходить в магазин</div>
+                <div class="task">Пойти погулять</div>
+                <div class="task">Устроиться на работу</div>
+            </div>
+
+            <div class="column processing">
+                <h3>В процессе</h3>
+                <div class="task">Выучить JS</div>
+                <div class="task">Выучить React</div>
+                <div class="task">Создать приложение на Vue.js</div>
+            </div>
+
+            <div class="column done">
+                <h3>Готово</h3>
+                <div class="task">Разработать сервер на .NET (C#)</div>
+                <div class="task">Настроить маршрутизацию в React</div>
+            </div>
+
+            <div class="column basket">
+                <h3>Корзина</h3>
+                <div class="task">Оптимизировать код на Vue.js</div>
+                <div class="task">Удалить ненужные файлы</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
