@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef4fb;
+    color: #000000;
+  }
+  
+  /* Заголовок */
+  header {
+    background-color: #2f80ed;
+    color: #fff;
+    padding: 15px 60px;
+    text-align: left;
+  }
+  
+  /* Главный контейнер */
+  .main-content {
+    padding: 40px;
+  }
+  
+  /* Блок добавления новой задачи */
+  .add-new-task {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    min-width: 350px;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .add-new-task h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  
+  .add-new-task .bottom-group {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .add-new {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-new-task button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-new-task button svg {
+    fill: white;
+  }
+  
+  /* Доска задач */
+  .desk-tasks {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    max-width: 2200px;
+    min-width: 1000px;
+  }
+  
+  /* Колонка задач */
+  .display-tasks {
+    flex: 1;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  .display-tasks h3 {
+    margin: 0 0 10px;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  /* Метки статусов */
+  .backlog h3 {
+    background-color: #e3e3e3;
+    color: #6c6f71;
+  }
+  
+  .processing h3 {
+    background-color: #d6e7ff;
+    color: #2e85ee;
+  }
+  
+  .done h3 {
+    background-color: #d7f9e0;
+    color: #73bc7b;
+  }
+  
+  .basket h3 {
+    background-color: #fbe3e3;
+    color: #cc6968;
+  }
+  
+  /* Список задач */
+  .display-tasks ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .display-tasks ul li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #ddd;
+    cursor: grab;
+  }
+  
+  /* Цвета карточек по статусам */
+  .task-backlog {
+    border-left-color: #e3e3e3 !important;
+  }
+  
+  .task-in-progress {
+    border-left-color: #d6e7ff !important;
+  }
+  
+  .task-done {
+    border-left-color: #d7f9e0 !important;
+  }
+  
+  .task-trash {
+    border-left-color: #fbe3e3 !important;
+  }
+  
+  /* Кнопка очистки */
+  .clear-button {
+    width: 100%;
+    background-color: #d0646c;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .clear-button:hover {
+    background-color: #b5535a;
+  }
+  
+  /* Пустая колонка */
+  .stub {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px dashed #bbb;
+    color: #bbb;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Стиль во время перетаскивания */
+.dragging {
+  opacity: 0.5;
+  transform: scale(1.03);
+  transition: transform 0.2s, opacity 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: grabbing;
+}
+
+/* Плавная вставка на новое место */
+.display-tasks ul li {
+  transition: all 0.25s ease;
+}
