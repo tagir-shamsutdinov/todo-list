@@ -36,8 +36,6 @@ export default class TasksBoardPresenter {
 
         render(this.#taskDeskComponent, this.#boardContainer);
 
-        console.log(this.#boardtasks);
-
         this.#boardtasks.forEach((taskList) => {
             this.#renderTaskList(taskList.status, taskList.tasks);
         });
