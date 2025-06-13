@@ -62,8 +62,6 @@ export default class TasksBoardPresenter {
 
         render(list, this.#taskDeskComponent.element);
 
-        console.log(tasks.length)
-
         tasks.length === 0 ? this.#renderPlugComponent(list) : tasks.forEach((task) => {
             this.#renderTask(task, list);
         });
